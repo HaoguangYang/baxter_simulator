@@ -3,6 +3,14 @@ baxter_simulator
 
 Gazebo simulation with emulated interfaces for the Baxter Research Robot
 
+To build from source, inside the catkin_ws run the following:
+
+::
+    
+    sudo apt-get install python3-rosinstall
+    rosinstall ./src https://raw.githubusercontent.com/HaoguangYang/baxter_simulator/master/baxter_simulator.rosinstall
+    catkin_make
+
 Code & Tickets
 --------------
 
