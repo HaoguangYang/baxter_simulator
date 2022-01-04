@@ -3,7 +3,8 @@
 
   <arg name="left_electric_gripper" default="true"/>
   <arg name="right_electric_gripper" default="true"/>
-
+  <arg name="gui" default="true"/>
+  
   <!-- baxter_sim_kinematics launch file to do the Forward/Inverse Kinematics -->
   <include file="$(find baxter_sim_kinematics)/launch/baxter_sim_kinematics.launch" />
 
