@@ -3,14 +3,19 @@ baxter_simulator
 
 Gazebo simulation with emulated interfaces for the Baxter Research Robot
 
-To build from source, inside the catkin_ws run the following:
+Assume you have installed ROS noetic. To build from source, inside the catkin_ws run the following:
 
 ::
     
     sudo apt-get install python3-rosinstall
+    source /opt/ros/noetic/setup.bash
     rosinstall ./src https://raw.githubusercontent.com/HaoguangYang/baxter_simulator/master/baxter_simulator.rosinstall
     catkin_make
 
+Fix any compilation errors related to dependency.
+
+To run the code, refer to https://sdk.rethinkrobotics.com/wiki/Simulator_Installation from section "Edit baxter.sh". Then follow further examples at https://sdk.rethinkrobotics.com/wiki/Hello_Baxter from section "Echo a ROS Topic".
+    
 Code & Tickets
 --------------
 
