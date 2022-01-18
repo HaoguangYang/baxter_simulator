@@ -7,11 +7,12 @@ Assume you have installed ROS noetic. To build from source, inside the catkin_ws
 
 ::
     
-    sudo apt-get install ros-noetic-ros-controllers
-    sudo apt-get install python3-rosinstall
+    sudo apt-get install ros-noetic-ros-controllers ros-noetic-xacro
+    sudo apt-get install python3-rosinstall python-is-python3
     source /opt/ros/noetic/setup.bash
-    rosinstall ./src https://raw.githubusercontent.com/HaoguangYang/baxter_simulator/master/baxter_simulator.rosinstall
+    rosinstall ./ https://raw.githubusercontent.com/HaoguangYang/baxter_simulator/master/baxter_simulator.rosinstall
     catkin_make
+    ln -s ./src/baxter/baxter.sh ./baxter.sh
 
 Fix any compilation errors related to dependency.
 
