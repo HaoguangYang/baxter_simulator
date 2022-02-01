@@ -427,6 +427,8 @@ bool arm_kinematics::Kinematics::getPositionIK(
     }
   }
 
+  jnt_pos_out = jnt_pos_in;     // initialize output size
+
   //Convert F to our root_frame
   try {
     tf_listener.transformPose(root_name, transform, transform_root);
@@ -450,7 +452,7 @@ bool arm_kinematics::Kinematics::getPositionIK(
     }
     return true;
   } else {
-    ROS_DEBUG("An IK solution could not be found");
+    ROS_DEBUG("An IK solution could not be found: Error %d", ik_valid);
     return false;
   }
 }
