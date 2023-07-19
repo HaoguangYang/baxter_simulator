@@ -76,8 +76,8 @@ class baxter_emulator {
    * Method to initialize the default values for all the variables, instantiate the publishers and 	* subscribers
    * @param img_path that refers the path of the image that loads on start up
    */
-  baxter_emulator() {
-  }
+  baxter_emulator(ros::NodeHandle* nh): n(nh) {}
+
   bool init();
 
   /**
@@ -111,7 +111,7 @@ class baxter_emulator {
   // Simulator has Started notification Publisher
   ros::Publisher sim_started_pub;
 
-  ros::NodeHandle n;
+  ros::NodeHandle* n;
   ros::Timer head_nod_timer;
 
   baxter_core_msgs::HeadState head_msg;
