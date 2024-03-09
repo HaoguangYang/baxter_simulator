@@ -17,7 +17,9 @@ Assume you have installed ROS noetic. To build from source, inside the catkin_ws
 Fix any compilation errors related to dependency.
 
 To run the code, refer to https://sdk.rethinkrobotics.com/wiki/Simulator_Installation from section "Edit baxter.sh". Then follow further examples at https://sdk.rethinkrobotics.com/wiki/Hello_Baxter from section "Echo a ROS Topic".
-    
+
+Since all Baxter wiki pages are gone from Rethink Robotics' website, we included a PDF file [Baxter-additional_docs.pdf](https://github.com/HaoguangYang/baxter_simulator/blob/master/Baxter-additional_docs.pdf), adapted from *ROS - Robotics by Example: 2nd edition* by Fairchild and Harman. We believe the file serves as a good mirror of what was on the Rethink's website.
+
 Code & Tickets
 --------------
 
